@@ -1,0 +1,9 @@
+{
+  "name": "stackfire-link",
+  "version": "0.0.1",
+  "main": "listen.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "underscore.string": "^3.3.5"
+  }
+}
