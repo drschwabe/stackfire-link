@@ -6,7 +6,7 @@ if(window.isElectron) {
 }
 
 module.exports = (stack, basename) => {
-  if(basename) stack.state.link_basename = basename
+  if(basename && window.state) state.link_basename = basename
   var fireLink = (link, event) => {
 
     //if web link, just return so default handling
@@ -25,10 +25,10 @@ module.exports = (stack, basename) => {
       if(event) {
         event.stopPropagation()
         event.preventDefault()
-        state.event = event
+        if(window.state) state.event = event
       }
       stack.fire( strippedLink , () => {
-        state.event = null
+        if(window.state) state.event = null
       })
     }
   }

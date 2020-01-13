@@ -1,6 +1,6 @@
 {
   "name": "stackfire-link",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "listen.js",
   "dependencies": {
     "jquery": "^3.3.1",
